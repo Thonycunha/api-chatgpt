@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <!-- Botões para passar -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!---->
+
+            <!--Imagens-->
+            <div class="slide first">
+                <img src="https://mittechreview.com.br/wp-content/uploads/2020/07/trbr_artigo_banner_30072020-1.jpg" alt="Imagem 1"/>
+            </div>
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS9LAf5iGWNXbnIKp4Ce7I2T-vmVs1tqJC7g&usqp=CAU" alt="Imagem 2"/>
+            </div>
+            <div class="slide">
+                <img src="https://www.inovacaotecnologica.com.br/noticias/imagens/010150221212-ai-codifica-programas.jpg" alt="Imagem 3"/>
+            </div>
+            <div class="slide">
+                <img src="https://files.tecnoblog.net/wp-content/uploads/2022/12/deepmind-alphacode.jpg" alt="Imagem 4"/>
+            </div>
+            <!---->
+
+            <!--Navegação-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            <!--Navegação-->
+
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+    <form>
+        <label for=""></label>
+        <textarea id="resultado" name="resultado" rows="4" cols="50" disabled  placeholder="Resultado:"></textarea><br>
+        <textarea id="pergunta" name="pergunta" rows="4" cols="50" placeholder="Pergunta:"></textarea><br>
+        
+        <button id = 'btn' onclick="limpaCampo()">Limpar</button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
